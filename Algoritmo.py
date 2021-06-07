@@ -309,13 +309,12 @@ mensaje = """
 
 	<!-- Materialize con el css-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
         
         <div style="width:50%;">
-        <h1><center>EQUIPO 2</center></h1>
         <a class="btn btn-primary btn-lg" href="#" role="button" id="boton">MostrarGrafica1 &raquo;</a>
     		<canvas id="MiGrafica" width="400" height="300"></canvas>
         <p id="Texto1">Empleamos un algortimo de regreseion lineal ya que con este podemos predecir la tendencia que 
