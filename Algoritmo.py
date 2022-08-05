@@ -304,46 +304,35 @@ mensaje = """
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">	
 	<title>Modulo de python</title>
-	<script	src="Chart.js"></script>
+	<script	src="./js/Chart.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
 
 	<!-- Materialize con el css-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/estilo.css">
 </head>
 <body>
         
-        <div style="width:50%;">
-        <a class="btn btn-primary btn-lg" href="#" role="button" id="boton">MostrarGrafica1 &raquo;</a>
-    		<canvas id="MiGrafica" width="400" height="300"></canvas>
-        <p id="Texto1">Empleamos un algortimo de regreseion lineal ya que con este podemos predecir la tendencia que 
-                        la tasa de contagios de VIH seguira en la CDMX los proximos años
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" id="boton2">MostrarGrafica2 &raquo;</a>
-            <canvas id="MiGrafica2" width="400" height="300"></canvas>
-        <p id="Texto2">De igual forma que en la grafica anterior empleamos un algortimo de regreseion lineal ya que con este se puede predecir la tendencia que 
-                        la tasa de contagios de VIH seguira en el EDO.MEX los proximos años
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" id="boton3">MostrarGrafica3 &raquo;</a>
-            <canvas id="MiGrafica3" width="400" height="300"></canvas>
-        <p id="Texto3">Despues de haber analizado de manera detenida la informacion que recopilamos de nuestras encuestas decidimos emplear los arboles de regresion
-        para predecir si un alumno ya habia tenido su primer encuentro sexual tomando como base las demas respuestas que este proporciono en la encuesta
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" id="boton4">MostrarGrafica4 &raquo;</a>
-            <canvas id="MiGrafica4" width="400" height="300"></canvas>
-        <p id="Texto4">Despues de haber analizado de manera detenida la informacion que recopilamos de nuestras encuestas decidimos emplear los arboles de regresion
-        para predecir cuantos años es que nuestros encuestados habian recibido educacion sexual tomando como base las demas respuestas que este proporciono en la encuesta
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" id="boton5">MostrarGrafica5 &raquo;</a>
-            <canvas id="MiGrafica5" width="400" height="300"></canvas>
-        <p id="Texto5">Haciendo uso del algoritmo de Clustering pudimos identificar los patrones en el que los encuestados se habian realizado pruebas de ITS en relacion con su edad
-        </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button" id="boton6">MostrarGrafica6 &raquo;</a>
-            <canvas id="MiGrafica6" width="400" height="300"></canvas>
-        <p id="Texto6">Haciendo uso del algoritmo de Clustering pudimos identificar los patrones en el que los encuestados habian recibido 
-        educacion sexual en relacion con su deseo de haber sido orientados en este aspecto por x persona</p>
+        <div style="width:100%;">
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="boton">Mostrar G. 1 &raquo;</a>
+            		<canvas id="MiGrafica" width="400" height="300"></canvas>
+                
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="boton2">Mostrar G. 2 &raquo;</a>
+                    <canvas id="MiGrafica2" width="400" height="300"></canvas>
+                
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="boton3">Mostrar G. 3 &raquo;</a>
+                    <canvas id="MiGrafica3" width="400" height="300"></canvas>
+                
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="boton4">Mostrar G. 4 &raquo;</a>
+                    <canvas id="MiGrafica4" width="400" height="300"></canvas>
+                
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="boton5">Mostrar G. 5 &raquo;</a>
+                    <canvas id="MiGrafica5" width="400" height="300"></canvas>
+                
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="boton6">Mostrar G. 6 &raquo;</a>
+                    <canvas id="MiGrafica6" width="400" height="300"></canvas>
         </div>
+        
         
 </body>
 <script>
@@ -363,8 +352,8 @@ let miCanvas=document.getElementById("MiGrafica").getContext("2d");
 			},
             {
                 label:"Contagios Reales de VIH en CDMX:",
-				backgroundColor:"rgb(217,4,41)",
-				borderColor:"rgb(217,4,41)",
+				backgroundColor:"rgb(216, 240, 231)",
+				borderColor:"rgb(216, 240, 231)",
                 fill:false,
 				data:"""+"[170,724,757,911,920,954,1157,1394,1435,1522,1860,1884]"+"""
                 }]
@@ -384,8 +373,8 @@ let miCanvas=document.getElementById("MiGrafica").getContext("2d");
 			},
             {
                 label:"Contagios Reales de VIH en EDOMEX:",
-				backgroundColor:"rgb(217,4,41)",
-				borderColor:"rgb(217,4,41)",
+				backgroundColor:"rgb(216, 240, 231)",
+				borderColor:"rgb(216, 240, 231)",
                 fill:false,
 				data:"""+"[2020,2002,1931,1606,1481,1481,1442,1217,1179,1058,1014,419]"+"""
                 }]
@@ -405,8 +394,8 @@ let miCanvas=document.getElementById("MiGrafica").getContext("2d");
 			},
             {
                 label:"Datos Reales de Personas que Ya han tenido su primer relacion sexual:",
-				backgroundColor:"rgb(217,4,41)",
-				borderColor:"rgb(217,4,41)",
+				backgroundColor:"rgb(216, 240, 231)",
+				borderColor:"rgb(216, 240, 231)",
                 fill:false,
 				data:["""+str(unosReales)+""","""+str(cerosReales)+"""]
                 }]
@@ -418,16 +407,16 @@ let miCanvas=document.getElementById("MiGrafica").getContext("2d");
 		data:{
 			labels:"""+"['0','1','2','3','5']"+""",
 			datasets:[{
-				label:"Prediccion de los años que las personas han tenido educacion sexual:",
+				label:"Prediccion de los anos que las personas han tenido educacion sexual:",
 				backgroundColor:"rgb(0,0,0)",
 				borderColor:"rgb(12,12,12)",
                 fill:false,
 				data:["""+str(Aceros)+""","""+str(Aunos)+""","""+str(Ados)+""","""+str(Atres)+""","""+str(Acinco)+"""]
 			},
             {
-                label:"Datos Reales de los años que las personas han tenido educacion sexual:",
-				backgroundColor:"rgb(217,4,41)",
-				borderColor:"rgb(217,4,41)",
+                label:"Datos Reales de los anos que las personas han tenido educacion sexual:",
+				backgroundColor:"rgb(216, 240, 231)",
+				borderColor:"rgb(216, 240, 231)",
                 fill:false,
 				data:["""+str(RAceros)+""","""+str(RAunos)+""","""+str(RAdos)+""","""+str(RAtres)+""","""+str(RAcinco)+"""]
                 }]
@@ -468,12 +457,7 @@ document.getElementById("MiGrafica3").style.visibility='hidden';
 document.getElementById("MiGrafica4").style.visibility='hidden';
 document.getElementById("MiGrafica5").style.visibility='hidden';
 document.getElementById("MiGrafica6").style.visibility='hidden';
-document.getElementById("Texto1").style.visibility='hidden';
-document.getElementById("Texto2").style.visibility='hidden';
-document.getElementById("Texto3").style.visibility='hidden';
-document.getElementById("Texto4").style.visibility='hidden';
-document.getElementById("Texto5").style.visibility='hidden';
-document.getElementById("Texto6").style.visibility='hidden';
+
 
 var boton = document.getElementById("boton");
 boton.onclick = function(e) {
@@ -484,12 +468,7 @@ boton.onclick = function(e) {
     document.getElementById("MiGrafica4").style.visibility='hidden';
     document.getElementById("MiGrafica5").style.visibility='hidden';
     document.getElementById("MiGrafica6").style.visibility='hidden';
-    document.getElementById("Texto1").style.visibility='visible';
-    document.getElementById("Texto2").style.visibility='hidden';
-    document.getElementById("Texto3").style.visibility='hidden';
-    document.getElementById("Texto4").style.visibility='hidden';
-    document.getElementById("Texto5").style.visibility='hidden';
-    document.getElementById("Texto6").style.visibility='hidden';
+    
 }
 var boton2 = document.getElementById("boton2");
 boton2.onclick = function(e) {
@@ -500,12 +479,7 @@ boton2.onclick = function(e) {
     document.getElementById("MiGrafica4").style.visibility='hidden';
     document.getElementById("MiGrafica5").style.visibility='hidden';
     document.getElementById("MiGrafica6").style.visibility='hidden';
-    document.getElementById("Texto1").style.visibility='hidden';
-    document.getElementById("Texto2").style.visibility='visible';
-    document.getElementById("Texto3").style.visibility='hidden';
-    document.getElementById("Texto4").style.visibility='hidden';
-    document.getElementById("Texto5").style.visibility='hidden';
-    document.getElementById("Texto6").style.visibility='hidden';
+    
 }
     
 var boton3 = document.getElementById("boton3");
@@ -517,12 +491,7 @@ boton3.onclick = function(e) {
     document.getElementById("MiGrafica4").style.visibility='hidden';
     document.getElementById("MiGrafica5").style.visibility='hidden';
     document.getElementById("MiGrafica6").style.visibility='hidden';
-    document.getElementById("Texto1").style.visibility='hidden';
-    document.getElementById("Texto2").style.visibility='hidden';
-    document.getElementById("Texto3").style.visibility='visible';
-    document.getElementById("Texto4").style.visibility='hidden';
-    document.getElementById("Texto5").style.visibility='hidden';
-    document.getElementById("Texto6").style.visibility='hidden';
+    
 }
 var boton4 = document.getElementById("boton4");
 boton4.onclick = function(e) {
@@ -533,12 +502,7 @@ boton4.onclick = function(e) {
     document.getElementById("MiGrafica4").style.visibility='visible';
     document.getElementById("MiGrafica5").style.visibility='hidden';
     document.getElementById("MiGrafica6").style.visibility='hidden';
-    document.getElementById("Texto1").style.visibility='hidden';
-    document.getElementById("Texto2").style.visibility='hidden';
-    document.getElementById("Texto3").style.visibility='hidden';
-    document.getElementById("Texto4").style.visibility='visible';
-    document.getElementById("Texto5").style.visibility='hidden';
-    document.getElementById("Texto6").style.visibility='hidden';
+    
 }
 
 var boton5 = document.getElementById("boton5");
@@ -550,12 +514,7 @@ boton5.onclick = function(e) {
     document.getElementById("MiGrafica4").style.visibility='hidden';
     document.getElementById("MiGrafica5").style.visibility='visible';
     document.getElementById("MiGrafica6").style.visibility='hidden';
-    document.getElementById("Texto1").style.visibility='hidden';
-    document.getElementById("Texto2").style.visibility='hidden';
-    document.getElementById("Texto3").style.visibility='hidden';
-    document.getElementById("Texto4").style.visibility='hidden';
-    document.getElementById("Texto5").style.visibility='visible';
-    document.getElementById("Texto6").style.visibility='hidden';
+    
 }
 var boton6 = document.getElementById("boton6");
 boton6.onclick = function(e) {
@@ -566,12 +525,7 @@ boton6.onclick = function(e) {
     document.getElementById("MiGrafica4").style.visibility='hidden';
     document.getElementById("MiGrafica5").style.visibility='hidden';
     document.getElementById("MiGrafica6").style.visibility='visible';
-    document.getElementById("Texto1").style.visibility='hidden';
-    document.getElementById("Texto2").style.visibility='hidden';
-    document.getElementById("Texto3").style.visibility='hidden';
-    document.getElementById("Texto4").style.visibility='hidden';
-    document.getElementById("Texto5").style.visibility='hidden';
-    document.getElementById("Texto6").style.visibility='visible';
+    
 }
 </script>
 </html>
